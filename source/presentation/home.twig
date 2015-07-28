@@ -1,0 +1,41 @@
+{% extends 'templates/template.twig' %}
+
+    {% block title %}
+        Home
+    {% endblock %}
+
+    {% block content %}
+        <!-- Sidebar -->
+        <div class="row">
+
+          <div class="side-nav col s12 m3 l2 no-padding card-reveal">
+            <!-- Navigation panel -->
+
+
+                <div class="container section">
+                    <!-- Profile Image or logo -->
+                    <img class="responsive-img circle" src="images/profile.jpg" data-caption="Roger Antonio">{# class="materialboxed" is bugged #}
+
+                    <!-- Social buttons -->
+                    <div id="social-icons" class="clearfix">
+                        <a class="left valign-wrapper" href="https://www.facebook.com/roger.antonio.vandekerckhove" target="_blank"><i class="fa fa-facebook" title="Facebook"></i></a>
+                        <a class="left valign-wrapper" href="http://twitter.com/s0ftvar" target="_blank"><i class="fa fa-twitter" title="Twitter"></i></a>
+                        <a class="left valign-wrapper" href="https://github.com/RogerAntonio" target="_blank"><i class="fa fa-github" title="Github"></i></a>
+                    </div>
+                </div>
+
+                <ul id="navigation">
+                    <!-- Navigation buttons -->
+                    <li><a href="/" class="active waves-effect waves-light">Home</a></li>
+                    <li><a href="/about" class="waves-effect waves-light">About</a></li>
+                    {# <li><a href="/blog" class="waves-effect waves-light">Blog</a></li> #}
+                    <li><a href="/portfolio" class="waves-effect waves-light">Projects</a></li>
+                    <li><a href="/contact" class="waves-effect waves-light">Contact</a></li>
+                </ul>
+            </div>
+
+          <div class="right col s12 m9 l10">
+            <!-- Page content  -->
+            content
+          </div>
+    {% endblock %}

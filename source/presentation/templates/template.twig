@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+    <html xmlns="http://www.w3.org/1999/xhtml"
+          xmlns:og="http://ogp.me/ns#"
+          xmlns:fb="https://www.facebook.com/2008/fbml">
+        <head>
+            <meta charset="utf-8">
+            <meta http-equiv="x-ua-compatible" content="ie=edge">
+            <title>{% block title %}{% endblock %} - Roger Antonio</title>
+
+
+            <!--Let browser know website is optimized for mobile-->
+            <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+            <!-- for Google -->
+            <meta name="description" content="Roger Antonio - Graphic design, Logo design, Web design, Web development" />
+            <meta name="keywords" content="Roger Antonio Vandekerckhove, webdesign, web, development, logo, vieo, graphic, design, website, free, gratis" />
+
+            <meta name="author" content="Roger Antonio Vandekerckhove" />
+            <meta name="copyright" content="Roger Antonio Vandekerckhove" />
+            <meta name="application-name" content="" />
+
+            <!-- for Facebook -->          
+            <meta property="og:title" content="Roger Antonio - Porfolio website" />
+            <meta property="og:type" content="article" />
+            <meta property="og:image" content="images/social/tile-wide.png" />
+            <meta property="og:url" content="http://rogerantonio.com" />
+            <meta property="og:description" content="Roger Antonio - Graphic design, Logo design, Web design, Web development" />
+
+            <!-- for Twitter -->          
+            <meta name="twitter:card" content="summary" />
+            <meta name="twitter:title" content="Roger Antonio - Portfolio website" />
+            <meta name="twitter:description" content="Roger Antonio - Graphic design, Logo design, Web design, Web development" />
+            <meta name="twitter:image" content="images/social/tile-wide.png" />
+
+            <link rel="apple-touch-icon" href="images/social/apple-touch-icon.png">
+            <!-- Place favicon.ico in the root directory -->
+            <link rel="icon" type="image/png" href="images/social/favicon.png">
+
+            <!-- CSS files -->
+            <!--Import materialize.css-->
+            <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+            <link rel="stylesheet" type="text/css" href="css/normalize.css">
+            <link rel="stylesheet" type="text/css" href="css/style.css">
+
+            <!-- Font Icons -->
+            <link rel="stylesheet" href="font/font-awesome/css/font-awesome.min.css">
+
+            <!-- JavaScript files -->
+            <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+
+        </head>
+
+        <body>
+            <!--[if lt IE 8]>
+                <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+            <![endif]-->
+            <header>
+                <!-- Header data goes here -->
+            </header>
+            <main>
+                <!-- Content goes in here -->
+                {% block content %}{% endblock %}
+            </main>
+            <footer>
+                <!-- Footer data goes here -->
+            </footer>
+
+            
+
+            <!-- Import jQuery before materialize.js -->
+            <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+            <script type="text/javascript" src="js/materialize.min.js"></script>
+        </body>
+    </html>

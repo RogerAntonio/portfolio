@@ -1,0 +1,90 @@
+@import url(main.css);
+
+body{
+    background-image: url(../images/background/main_page.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    font-size: 62.5%;
+}
+body#error404{
+    background-image: url(../images/background/404.png);
+    background-repeat: no-repeat;
+    background-size: initial;
+    background-position: left bottom;
+}
+
+html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizelegibility;
+}
+
+svg {
+    width: 100%;
+    height: inherit;
+}
+svg text{
+    text-anchor: middle;
+}
+
+#svg_logo{
+    width: initial;
+    margin-left:auto; 
+    margin-right:auto; 
+    display:block;
+    -webkit-transform-origin: 50% 50%;
+    -moz-transform-origin: 50% 50%;
+    -o-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    transform: translateX(-50);
+}
+
+svg #alpha {
+    fill: #999;
+}
+svg #title {
+    letter-spacing: -2px;
+    font-size: 6em;
+    font-weight: 800;
+}
+svg #subtitle {
+    letter-spacing: 8px;
+    font-size: 1.2em;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+svg #base {
+    fill: black;
+    -webkit-mask: url(#mask);
+        mask: url(#mask);
+}
+
+/*@keyframes alpha {
+  50%{fill: #000;}
+}*/
+
+.side-nav{
+    background-color: rgba(0, 0, 0, 0.45);
+}
+.side-nav a{
+    color: white;
+}
+
+#social-icons{
+    margin: 2em auto 0 auto;
+}
+
+#social-icons a{
+    padding: 0.8em;
+    line-height: initial;
+    height: inherit;
+    min-width: 2.5em;
+    text-align: center;
+}
+
+#navigation li:hover, #social-icons a:hover{
+    background-color: rgba(0, 0, 0, 0.45);
+}

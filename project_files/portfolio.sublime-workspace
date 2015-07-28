@@ -1,0 +1,513 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"margin",
+				"margin"
+			],
+			[
+				"background",
+				"background-image"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"min",
+				"min-height"
+			],
+			[
+				"padding",
+				"padding-bottom"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"border",
+				"border-left"
+			],
+			[
+				"max",
+				"max-height"
+			],
+			[
+				"bac",
+				"background-origin"
+			],
+			[
+				"d",
+				"dashed"
+			],
+			[
+				"pading",
+				"padding-right"
+			],
+			[
+				"paddign",
+				"padding-top"
+			],
+			[
+				"bo",
+				"box-shadow"
+			],
+			[
+				"o",
+				"opacity"
+			],
+			[
+				"margin-",
+				"margin-right"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"u",
+				"ul	Tag"
+			],
+			[
+				"i",
+				"italic"
+			],
+			[
+				"fon",
+				"font-style"
+			],
+			[
+				"tex",
+				"text-decoration"
+			],
+			[
+				"im",
+				"import"
+			],
+			[
+				"r",
+				"rgba()"
+			],
+			[
+				"paddi",
+				"padding"
+			],
+			[
+				"m",
+				"margin-right"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"fot",
+				"font-size"
+			],
+			[
+				"backgro",
+				"background-color"
+			],
+			[
+				"inl",
+				"inline-block"
+			],
+			[
+				"in",
+				"input"
+			],
+			[
+				"min-",
+				"min-height"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/Users/Directive/Desktop/web/GIT_Portfolio/index.php",
+			"settings":
+			{
+				"buffer_size": 482,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/Directive/Desktop/web/GIT_Portfolio/source/presentation/templates/template.twig",
+			"settings":
+			{
+				"buffer_size": 2919,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 327.0,
+		"last_filter": "set syntax h",
+		"selected_items":
+		[
+			[
+				"set syntax h",
+				"Set Syntax: HTML"
+			],
+			[
+				"keu",
+				"Preferences: Key Bindings - User"
+			],
+			[
+				"Snippet: ",
+				"Snippet: html"
+			]
+		],
+		"width": 392.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/Directive/Desktop/web/GIT_Portfolio",
+		"/Users/Directive/Desktop/web/GIT_Portfolio/source",
+		"/Users/Directive/Desktop/web/GIT_Portfolio/source/presentation",
+		"/Users/Directive/Desktop/web/GIT_Portfolio/source/presentation/templates"
+	],
+	"file_history":
+	[
+		"/Users/Directive/Desktop/web/Portfolio/css/main.css",
+		"/Users/Directive/Desktop/web/Portfolio/css/style.css",
+		"/Users/Directive/Desktop/web/whisky_scrum/src/ProjectWhisky/presentation/distillery_page.twig",
+		"/Users/Directive/Desktop/web/whisky_scrum/src/ProjectWhisky/presentation/whisky_search.twig",
+		"/Users/Directive/Desktop/web/whisky_scrum/src/ProjectWhisky/presentation/whisky_page.twig",
+		"/Users/Directive/Desktop/web/whisky_scrum/src/ProjectWhisky/presentation/profile.twig",
+		"/Users/Directive/Desktop/web/whisky_scrum/src/ProjectWhisky/presentation/cpanel_template.twig",
+		"/Users/Directive/Desktop/web/whisky_scrum/src/ProjectWhisky/presentation/home.twig",
+		"/Users/Directive/Desktop/web/whisky_scrum/src/ProjectWhisky/presentation/css/admin/style.css",
+		"/Users/Directive/Desktop/web/whisky_scrum/src/ProjectWhisky/presentation/css/default/style.css",
+		"/Users/Directive/Desktop/web/whisky_scrum/src/ProjectWhisky/presentation/default_template.twig",
+		"/Users/Directive/Desktop/web/whisky_scrum/src/ProjectWhisky/presentation/cp_whisky_edit.twig",
+		"/Users/Directive/Desktop/web/whisky_scrum/src/ProjectWhisky/presentation/css/default/popup.css",
+		"/Users/Directive/Desktop/web/whisky_scrum/src/ProjectWhisky/presentation/cp_whisky_add.twig",
+		"/Users/Directive/Desktop/web/whisky_scrum/CP_whisky_edit.php",
+		"/Users/Directive/Desktop/web/whisky_scrum/CP_whisky_add.php",
+		"/Users/Directive/Desktop/web/whisky_scrum/src/ProjectWhisky/data/DBConnect.php",
+		"/Users/Directive/Desktop/web/whisky_scrum/src/ProjectWhisky/presentation/cp_whisky.twig",
+		"/Users/Directive/Desktop/web/whisky_scrum/src/ProjectWhisky/presentation/cp_distillery.twig",
+		"/Users/Directive/Desktop/web/whisky_scrum/src/ProjectWhisky/presentation/cp_user_edit.twig",
+		"/Users/Directive/Desktop/web/whisky_scrum/src/ProjectWhisky/presentation/cp_barrel.twig",
+		"/Users/Directive/Desktop/web/whisky_scrum/CP_distillery.php",
+		"/Users/Directive/Desktop/web/whisky_scrum/CP_barrel.php",
+		"/Users/Directive/Desktop/web/whisky_scrum/whisky.php",
+		"/Users/Directive/Desktop/web/whisky_scrum/src/ProjectWhisky/presentation/cp_user_add.twig",
+		"/Users/Directive/Desktop/web/whisky_scrum/src/ProjectWhisky/presentation/cp_distillery_edit.twig",
+		"/Users/Directive/Desktop/web/whisky_scrum/src/ProjectWhisky/presentation/cp_distillery_add.twig",
+		"/Users/Directive/Desktop/web/whisky_scrum/src/ProjectWhisky/presentation/cp_user.twig",
+		"/Users/Directive/Desktop/web/whisky_scrum/src/ProjectWhisky/presentation/cp_barrel_edit.twig",
+		"/Users/Directive/Desktop/web/whisky_scrum/src/ProjectWhisky/presentation/cp_barrel_add.twig",
+		"/Users/Directive/Desktop/web/whisky_scrum/src/ProjectWhisky/presentation/CP_whisky.twig",
+		"/Users/Directive/Desktop/web/whisky_scrum/src/ProjectWhisky/presentation/cpanel_index.html",
+		"/Users/Directive/Desktop/web/whisky_scrum/src/ProjectWhisky/entities/Whisky.php",
+		"/Users/Directive/Desktop/web/whisky_scrum/src/ProjectWhisky/entities/User.php",
+		"/Users/Directive/Desktop/web/whisky_scrum/src/ProjectWhisky/data/userDAO.php",
+		"/Users/Directive/Desktop/web/whisky_scrum/src/ProjectWhisky/business/UserBusiness.php",
+		"/Users/Directive/Desktop/web/whisky_scrum/src/ProjectWhisky/presentation/CP_whisky_add.twig",
+		"/Users/Directive/Desktop/web/whisky_scrum/src/ProjectWhisky/presentation/CP_whisky_edit.twig",
+		"/Users/Directive/Desktop/web/whisky_scrum/CP_user.php",
+		"/Users/Directive/Desktop/web/whisky_scrum/src/ProjectWhisky/data/distilleryDAO.php",
+		"/Users/Directive/Desktop/web/whisky_scrum/src/ProjectWhisky/presentation/js/search.js",
+		"/Users/Directive/Desktop/web/whisky_scrum/src/ProjectWhisky/presentation/sliders/css/classic.css",
+		"/Users/Directive/Desktop/web/whisky_scrum/CP_main.php",
+		"/Users/Directive/Desktop/web/whisky_scrum/src/ProjectWhisky/presentation/sliders/jQRangeSliderHandle.js",
+		"/Users/Directive/Desktop/web/whisky_scrum/src/ProjectWhisky/presentation/sliders/jQRangeSlider.js",
+		"/Users/Directive/Desktop/web/whisky_scrum/src/ProjectWhisky/presentation/sliders/jQEditRangeSlider.js",
+		"/Users/Directive/Desktop/web/whisky_scrum/src/ProjectWhisky/presentation/sliders/package.json",
+		"/Users/Directive/Desktop/web/whisky_scrum/src/ProjectWhisky/data/commentDAO.php",
+		"/Users/Directive/Desktop/web/whisky_scrum/search.php",
+		"/Users/Directive/Desktop/web/whisky_scrum/src/ProjectWhisky/presentation/cp_users.twig",
+		"/Users/Directive/Desktop/web/whisky_scrum/lib/ckeditor/skins/moono/editor_gecko.css",
+		"/Users/Directive/Desktop/web/whisky_scrum/lib/ckeditor/skins/moono/dialog.css",
+		"/Users/Directive/Desktop/web/whisky_scrum/lib/ckeditor/skins/moono/editor.css",
+		"/Users/Directive/Desktop/web/whisky_scrum/lib/ckeditor/build-config.js",
+		"/Users/Directive/Desktop/web/whisky_scrum/lib/ckeditor/config.js",
+		"/Users/Directive/Desktop/web/whisky_scrum/lib/ckeditor/contents.css",
+		"/Users/Directive/Desktop/web/whisky_scrum/lib/ckeditor/styles.js",
+		"/Users/Directive/Desktop/web/whisky_scrum/lib/ckeditor/LICENSE.md",
+		"/Users/Directive/Desktop/web/whisky_scrum/src/ProjectWhisky/presentation/js/main.js",
+		"/Users/Directive/Desktop/web/whisky_scrum/src/ProjectWhisky/presentation/css/main.css",
+		"/Users/Directive/Desktop/web/whisky_scrum/profile.php",
+		"/Users/Directive/Desktop/web/whisky_scrum/src/ProjectWhisky/presentation/profile2.twig",
+		"/Users/Directive/Desktop/web/whisky_scrum/src/ProjectWhisky/business/ProfileBusiness.php",
+		"/Users/Directive/Desktop/web/whisky_scrum/src/ProjectWhisky/presentation/default_template_BU.twig",
+		"/Users/Directive/Desktop/web/whisky/whiskey.sublime-project",
+		"/Users/Directive/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/Directive/Desktop/web/whisky/cpanel_index.html",
+		"/Users/Directive/Desktop/web/whisky/presentation/css/admin/style.css",
+		"/Users/Directive/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/Directive/Library/Application Support/Sublime Text 3/Packages/User/HTML.sublime-settings",
+		"/Users/Directive/Desktop/web/whisky/presentation/css/default/style.css",
+		"/Users/Directive/Desktop/web/whisky/index.html",
+		"/Users/Directive/Desktop/web/whisky/whisky.html",
+		"/Users/Directive/Library/Application Support/Sublime Text 3/Packages/User/run_browser.py",
+		"/Users/Directive/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/Directive/Library/Application Support/Sublime Text 3/Packages/Default/Default (OSX).sublime-keymap",
+		"/Users/Directive/Desktop/web/wiskey_beta/style.css",
+		"/Users/Directive/Desktop/web/wiskey_beta/index.html"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"<current file>",
+			"<current file>,/Users/Directive/Desktop/web/whisky_scrum",
+			"<current file>",
+			"/Users/Directive/Desktop/web/whisky_scrum/src/ProjectWhisky/presentation/sliders",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"50",
+			"a{",
+			"whiskyMesage",
+			"</br>",
+			" </label>",
+			"<label for=\"\">",
+			"<br>",
+			" for=\"",
+			"<label",
+			" </label>",
+			"controller",
+			"border-bottom: ",
+			"<input",
+			"submit",
+			"#profile_edit_form",
+			"200",
+			"opensans",
+			"change",
+			"header",
+			"family",
+			"open_sansbold",
+			";\n",
+			"';\n",
+			"686E7F",
+			"82C4CC",
+			"'opensans-",
+			"return",
+			"browser",
+			";\n"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"0",
+			"whiskyMessage",
+			"",
+			"</h3>",
+			"<h3>",
+			"",
+			"<h3",
+			"</h3>",
+			"C5C7CC",
+			"686E7F",
+			"'../fonts/opensans-"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/Users/Directive/Desktop/web/GIT_Portfolio/index.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 482,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								437,
+								437
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/Users/Directive/Desktop/web/GIT_Portfolio/source/presentation/templates/template.twig",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2919,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2360,
+								2360
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 61.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "portfolio.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 250.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
