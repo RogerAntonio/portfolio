@@ -45,6 +45,9 @@
             <!-- Font Icons -->
             <link rel="stylesheet" href="font/font-awesome/css/font-awesome.min.css">
 
+            <!-- Google Font -->
+            <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+
             <!-- JavaScript files -->
             <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 
@@ -59,7 +62,44 @@
             </header>
             <main>
                 <!-- Content goes in here -->
-                {% block content %}{% endblock %}
+                
+                    <!-- Sidebar -->
+                    <div class="row">
+
+                      <div class="side-nav col s12 m3 l2 no-padding card-reveal transparent_bg">
+                        <!-- Navigation panel -->
+
+
+                            <div class="container center section">
+                                <!-- Profile Image or logo -->
+                                <img id="profile_pic" class="materialboxed responsive-img circle" src="images/profile.jpg" data-caption="Roger Antonio">{# class="materialboxed" is bugged #}
+
+                                <!-- Social buttons -->
+                                <div id="social-icons" class="clearfix">
+                                    <a class="left valign-wrapper waves-effect waves-light" href="https://www.facebook.com/roger.antonio.vandekerckhove" target="_blank"><i class="fa fa-facebook" title="Facebook"></i></a>
+                                    <a class="left valign-wrapper waves-effect waves-light" href="#" target="_blank"><i class="fa fa-twitter" title="Twitter"></i></a>
+                                    <a class="left valign-wrapper waves-effect waves-light" href="https://github.com/RogerAntonio" target="_blank"><i class="fa fa-github" title="Github"></i></a>
+                                </div>
+                            </div>
+
+                            <ul id="navigation">
+                                <!-- Navigation buttons -->
+                                <li><a href="#" class="active waves-effect waves-light">Home</a></li>
+                                <li><a href="#" class="waves-effect waves-light">About</a></li>
+                                {# <li><a href="#" class="waves-effect waves-light">Blog</a></li> #}
+                                <li><a href="#" class="waves-effect waves-light">Projects</a></li>
+                                <li><a href="#" class="waves-effect waves-light">Contact</a></li>
+                            </ul>
+                        </div>
+
+                    <div class="right col s12 m9 l10">
+                        <!-- Page content  -->
+                        <div class="container">
+                            {% block content %}{% endblock %}
+                        </div>
+                    </div>
+
+                
             </main>
             <footer>
                 <!-- Footer data goes here -->
@@ -70,5 +110,55 @@
             <!-- Import jQuery before materialize.js -->
             <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
             <script type="text/javascript" src="js/materialize.min.js"></script>
+            <script type="text/javascript">
+                (function($) {
+                    $.fn.extend({
+                    rotaterator: function(options) {
+
+                      var defaults = {
+                        fadeSpeed: 500,
+                        pauseSpeed: 100,
+                        child: null
+                      };
+
+                      var options = $.extend(defaults, options);
+
+                      return this.each(function() {
+                        var o = options;
+                        var obj = $(this);
+                        var items = $(obj.children(), obj);
+                        items.each(function() {
+                          $(this).hide();
+                        })
+                        if (!o.child) {
+                          var next = $(obj).children(':first');
+                        } else {
+                          var next = o.child;
+                        }
+                        $(next).fadeIn(o.fadeSpeed, function() {
+                          $(next).delay(o.pauseSpeed).fadeOut(o.fadeSpeed, function() {
+                            var next = $(this).next();
+                            if (next.length == 0) {
+                              next = $(obj).children(':first');
+                            }
+                            $(obj).rotaterator({
+                              child: next,
+                              fadeSpeed: o.fadeSpeed,
+                              pauseSpeed: o.pauseSpeed
+                            });
+                          })
+                        });
+                      });
+                    }
+                    });
+                    })(jQuery);
+
+                    $(document).ready(function() {
+                    $('#rotate').rotaterator({
+                    fadeSpeed: 500,
+                    pauseSpeed: 2000
+                    });
+                    });
+            </script>
         </body>
     </html>

@@ -1,5 +1,51 @@
 @import url(main.css);
 
+@font-face {
+    font-family: 'Roboto';
+    src: url('../font/roboto/Roboto-Regular.ttf');
+    src: url('../font/roboto/Roboto-Regular.woff2') format('woff2'),
+         url('../font/roboto/Roboto-Regular.woff') format('woff'),
+         url('../font/roboto/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'roboto_thin';
+    src: url('../font/roboto/Roboto-Thin.ttf');
+    src: url('../font/roboto/Roboto-Thin.woff2') format('woff2'),
+         url('../font/roboto/Roboto-Thin.woff') format('woff'),
+         url('../font/roboto/Roboto-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'roboto_light';
+    src: url('../font/roboto/Roboto-Light.ttf');
+    src: url('../font/roboto/Roboto-Light.woff2') format('woff2'),
+         url('../font/roboto/Roboto-Light.woff') format('woff'),
+         url('../font/roboto/Roboto-Light.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'roboto_medium';
+    src: url('../font/roboto/Roboto-Medium.ttf');
+    src: url('../font/roboto/Roboto-Medium.woff2') format('woff2'),
+         url('../font/roboto/Roboto-Medium.woff') format('woff'),
+         url('../font/roboto/Roboto-Medium.ttf') format('truetype');
+    font-weight: 300;
+    font-style: oblique;
+}
+@font-face {
+    font-family: 'roboto_bold';
+    src: url('../font/roboto/Roboto-Bold.ttf');
+    src: url('../font/roboto/Roboto-Bold.woff2') format('woff2'),
+         url('../font/roboto/Roboto-Bold.woff') format('woff'),
+         url('../font/roboto/Roboto-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: oblique;
+}
+
 body{
     background-image: url(../images/background/main_page.gif);
     background-repeat: no-repeat;
@@ -27,6 +73,7 @@ svg {
 }
 svg text{
     text-anchor: middle;
+    font-size: inherit;
 }
 
 #svg_logo{
@@ -43,18 +90,23 @@ svg text{
 }
 
 svg #alpha {
-    fill: #999;
+    fill: rgba(255, 255, 255, 0.45);
 }
 svg #title {
-    letter-spacing: -2px;
+    /*letter-spacing: -2px;
     font-size: 6em;
-    font-weight: 800;
+    */
 }
-svg #subtitle {
-    letter-spacing: 8px;
+svg #subtitle1,
+svg #subtitle2,
+svg #subtitle3,
+svg #subtitle4{
+    /*letter-spacing: 8px;
     font-size: 1.2em;
     font-weight: 300;
-    text-transform: uppercase;
+    text-transform: uppercase;*/
+    font-family: "Roboto", sans-serif;
+    font-size: 2em;
 }
 svg #base {
     fill: black;
@@ -66,25 +118,52 @@ svg #base {
   50%{fill: #000;}
 }*/
 
-.side-nav{
+#materialbox-overlay{
+    background: none;
+}
+
+.transparent_bg, #navigation li a.active{
     background-color: rgba(0, 0, 0, 0.45);
 }
 .side-nav a{
     color: white;
+    padding-left: 2em;
+}
+
+.side-nav{
+    overflow-y: inherit;
 }
 
 #social-icons{
     margin: 2em auto 0 auto;
 }
 
+
 #social-icons a{
     padding: 0.8em;
     line-height: initial;
     height: inherit;
-    min-width: 2.5em;
+    min-width: 30%;
     text-align: center;
 }
 
 #navigation li:hover, #social-icons a:hover{
     background-color: rgba(0, 0, 0, 0.45);
+}
+
+#navigation li{
+    padding: 0;
+}
+
+#profile_pic{
+    max-width: 22em;
+    width: 100%;
+}
+
+#logo_mask{
+    margin-top: 15em;
+}
+
+.quote{
+    font-family: 'Lobster', cursive;
 }
