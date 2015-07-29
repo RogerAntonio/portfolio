@@ -90,7 +90,7 @@ svg text{
 }
 
 svg #alpha {
-    fill: rgba(255, 255, 255, 0.45);
+    fill: rgba(255, 255, 255, 1);
 }
 svg #title {
     /*letter-spacing: -2px;
@@ -109,7 +109,7 @@ svg #subtitle4{
     font-size: 2em;
 }
 svg #base {
-    fill: black;
+    fill: rgba(0, 0, 0, 0.45);
     -webkit-mask: url(#mask);
         mask: url(#mask);
 }
@@ -160,10 +160,10 @@ svg #base {
     width: 100%;
 }
 
-#logo_mask{
-    margin-top: 15em;
-}
-
 .quote{
     font-family: 'Lobster', cursive;
+}
+
+#main_container{
+    margin-top: 5em;
 }
