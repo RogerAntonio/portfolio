@@ -18,28 +18,28 @@
                                     <text class="flow-text quote" id="title" x="50%" y="0" dy="9em">
                                         &quot;This mod is going places&quot;
                                     </text>
-                                    <text id="subtitle1" class="flow-text quote" x="50%" y="0" dy="13.5em">- Vetyver, CEO super-earth.net</text>
+                                    <text id="subtitle" class="flow-text quote" x="50%" y="0" dy="13.5em">- Vetyver, CEO super-earth.net</text>
                                 </g>
                                 <g>
                                     <!-- All text that you want -->
                                     <text class="flow-text quote" id="title" x="50%" y="0" dy="9em">
                                         &quot;Perfect!&quot;
                                     </text>
-                                    <text id="subtitle2" class="flow-text quote" x="50%" y="0" dy="13.5em">- ARCHEMIN.BE</text>
+                                    <text id="subtitle" class="flow-text quote" x="50%" y="0" dy="13.5em">- ARCHEMIN.BE</text>
                                 </g>
                                 <g>
                                     <!-- All text that you want -->
                                     <text class="flow-text quote" id="title" x="50%" y="0" dy="9em">
                                         &quot;You freak! That's amazing..&quot;
                                     </text>
-                                    <text id="subtitle3" class="flow-text quote" x="50%" y="0" dy="13.5em">- Some Stranger</text>
+                                    <text id="subtitle" class="flow-text quote" x="50%" y="0" dy="13.5em">- Some Stranger</text>
                                 </g>
                                 <g>
                                     <!-- All text that you want -->
                                     <text class="flow-text quote" id="title" x="50%" y="0" dy="9em">
                                         &quot;Bad with Deadlines, but always delivers!&quot;
                                     </text>
-                                    <text id="subtitle4" class="flow-text quote" x="50%" y="0" dy="13.5em">- Anonymous Client</text>
+                                    <text id="subtitle" class="flow-text quote" x="50%" y="0" dy="13.5em">- Anonymous Client</text>
                                 </g>
                             </svg>
 
@@ -83,7 +83,10 @@
                         </mask>
                     </defs>
                     <!-- Apply color here! -->
-                    <rect id="base" x="0" y="0" width="100%" height="100%"/>                
+                    <rect id="base" x="0" y="0" width="100%" height="100%"/>
+                    <use mask="url(#Mask)" fill="rgba(255,255,255,0.45)" xlink:href="#title"/>
+                    <use mask="url(#Mask)" fill="rgba(255,255,255,0.45)" xlink:href="#subtitle"/>
+                    <use mask="url(#Mask)" fill="rgba(255,255,255,0.45)" xlink:href="#svg_logo"/>
                 </svg>
                 <div class="transparent_bg">
                     content

@@ -97,10 +97,7 @@ svg #title {
     font-size: 6em;
     */
 }
-svg #subtitle1,
-svg #subtitle2,
-svg #subtitle3,
-svg #subtitle4{
+svg #subtitle {
     /*letter-spacing: 8px;
     font-size: 1.2em;
     font-weight: 300;
