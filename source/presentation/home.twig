@@ -6,7 +6,7 @@
 
     {% block content %}
                 <svg version="1.1" id="logo_mask" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                     width="100%" height="280px" xml:space="preserve">
+                     width="100%" height="290px" xml:space="preserve">
                     <defs>
                         <mask id="mask" x="0" y="0" width="100%" height="100%">
                             <!-- alpha rectangle -->
@@ -15,31 +15,31 @@
                             <svg id="rotate">
                                 <g>
                                     <!-- All text that you want -->
-                                    <text class="flow-text quote" id="title" x="50%" y="0" dy="9em">
+                                    <text class="flow-text quote" id="title" x="50%" y="0" dy="9.5em">
                                         &quot;This mod is going places&quot;
                                     </text>
-                                    <text id="subtitle" class="flow-text quote" x="50%" y="0" dy="13.5em">- Vetyver, CEO super-earth.net</text>
+                                    <text id="subtitle" class="flow-text quote" x="50%" y="0" dy="14.5em">- Vetyver, CEO super-earth.net</text>
                                 </g>
                                 <g>
                                     <!-- All text that you want -->
-                                    <text class="flow-text quote" id="title" x="50%" y="0" dy="9em">
+                                    <text class="flow-text quote" id="title" x="50%" y="0" dy="9.5em">
                                         &quot;Perfect!&quot;
                                     </text>
-                                    <text id="subtitle" class="flow-text quote" x="50%" y="0" dy="13.5em">- ARCHEMIN.BE</text>
+                                    <text id="subtitle" class="flow-text quote" x="50%" y="0" dy="14.5em">- ARCHEMIN.BE</text>
                                 </g>
                                 <g>
                                     <!-- All text that you want -->
-                                    <text class="flow-text quote" id="title" x="50%" y="0" dy="9em">
+                                    <text class="flow-text quote" id="title" x="50%" y="0" dy="9.5em">
                                         &quot;You freak! That's amazing..&quot;
                                     </text>
-                                    <text id="subtitle" class="flow-text quote" x="50%" y="0" dy="13.5em">- Some Stranger</text>
+                                    <text id="subtitle" class="flow-text quote" x="50%" y="0" dy="14.5em">- Some Stranger</text>
                                 </g>
                                 <g>
                                     <!-- All text that you want -->
-                                    <text class="flow-text quote" id="title" x="50%" y="0" dy="9em">
+                                    <text class="flow-text quote" id="title" x="50%" y="0" dy="9.5em">
                                         &quot;Bad with Deadlines, but always delivers!&quot;
                                     </text>
-                                    <text id="subtitle" class="flow-text quote" x="50%" y="0" dy="13.5em">- Anonymous Client</text>
+                                    <text id="subtitle" class="flow-text quote" x="50%" y="0" dy="14.5em">- Anonymous Client</text>
                                 </g>
                             </svg>
 
@@ -88,7 +88,23 @@
                     <use mask="url(#Mask)" fill="rgba(255,255,255,0.45)" xlink:href="#subtitle"/>
                     <use mask="url(#Mask)" fill="rgba(255,255,255,0.45)" xlink:href="#svg_logo"/>
                 </svg>
-                <div class="transparent_bg">
-                    content
+                <div class="transparent_bg padding-1">
+                    
+                    <div class="card small">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="images/social/tile-wide.png">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4 fullwidth">Card Title<i class="fa fa-ellipsis-v right padding-left-1 padding-right-1" style="line-height: 48px;"></i></span>
+                            <p class="section"><a href="#">View full project</a></p>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4 fullwidth">Card Title<i class="fa fa-times right padding-left-1 padding-right-1"></i></span>
+                            <p class="section">Here is some more information about this product that is only revealed once clicked on.</p>
+                            <p class="section"><a href="#">View full project</a></p>
+                        </div>
+                    </div>
+            
+
                 </div>
     {% endblock %}

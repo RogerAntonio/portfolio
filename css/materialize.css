@@ -5619,7 +5619,8 @@ small {
     display: none; }
     .card .card-reveal .card-title {
       cursor: pointer;
-      display: block; }
+      display: block;
+    }
 
 #toast-container {
   display: block;

@@ -52,7 +52,6 @@ body{
     background-size: cover;
     background-position: center center;
 
-    font-size: 62.5%;
 }
 body#error404{
     background-image: url(../images/background/404.png);
@@ -103,7 +102,7 @@ svg #subtitle {
     font-weight: 300;
     text-transform: uppercase;*/
     font-family: "Roboto", sans-serif;
-    font-size: 2em;
+    font-size: 1.2em;
 }
 svg #base {
     fill: rgba(0, 0, 0, 0.45);
@@ -163,4 +162,14 @@ svg #base {
 
 #main_container{
     margin-top: 5em;
+}
+
+.padding-1{
+    padding:1em;
+}
+.padding-right-1{
+    padding-right:0.5em;
+}
+.padding-left-1{
+    padding-left:0.5em;
 }
