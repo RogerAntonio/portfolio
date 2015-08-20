@@ -51,6 +51,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    background-attachment: fixed;
 
 }
 body#error404{
@@ -164,12 +165,17 @@ svg #base {
     margin-top: 5em;
 }
 
-.padding-1{
-    padding:1em;
+#recent_news_container{
+    margin-top: 2em;
 }
-.padding-right-1{
-    padding-right:0.5em;
-}
-.padding-left-1{
-    padding-left:0.5em;
+
+@media only screen and (max-width : 601px){ /* Mobile fixes */
+    .side-nav{
+        position: initial;
+    }
+
+    .promo{
+        margin-top: 1em;
+        margin-bottom: 2em;
+    }
 }

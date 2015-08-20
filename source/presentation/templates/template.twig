@@ -51,9 +51,9 @@
             <!-- JavaScript files -->
             <script src="js/vendor/modernizr-2.8.3.min.js"></script>
             <style>
-                    svg use{
-                        display: none;
-                    }
+                svg use{
+                    display: none;
+                }
 
 
                 @-moz-document url-prefix() {
@@ -100,7 +100,7 @@
                                 <!-- Navigation buttons -->
                                 <li><a href="#" class="active waves-effect waves-light">Home</a></li>
                                 <li><a href="#" class="waves-effect waves-light">About</a></li>
-                                {# <li><a href="#" class="waves-effect waves-light">Blog</a></li> #}
+                                <li><a href="#" class="waves-effect waves-light">Blog</a></li>
                                 <li><a href="#" class="waves-effect waves-light">Projects</a></li>
                                 <li><a href="#" class="waves-effect waves-light">Contact</a></li>
                             </ul>
@@ -108,9 +108,14 @@
 
                     <div class="right col s12 m9 l10">
                         <!-- Page content  -->
-                        <div id="main_container" class="container z-depth-1">
-                            {% block content %}{% endblock %}
-                        </div>
+                            <div id="main_container" class="container z-depth-1">
+                                {% block content %}{% endblock %}
+                            </div>
+                        {% if title == 'Home' %}
+                            <div id="recent_news_container" class="container z-depth-1">
+                                {% block newscontent %}{% endblock %}
+                            </div>
+                        {% endif %}
                     </div>
 
                 

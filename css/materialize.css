@@ -5532,9 +5532,9 @@ small {
   position: relative;
   overflow: hidden;
   margin: 0.5rem 0 1rem 0;
-  background-color: #fff;
+  /*background-color: #fff;*/
   transition: box-shadow .25s;
-  border-radius: 2px; }
+  /*border-radius: 2px;*/ }
   .card .card-title {
     color: #fff;
     font-size: 24px;
@@ -5573,7 +5573,7 @@ small {
   .card .card-image {
     position: relative; }
     .card .card-image img {
-      border-radius: 2px 2px 0 0;
+      /*border-radius: 2px 2px 0 0;*/
       position: relative;
       left: 0;
       right: 0;
@@ -5587,7 +5587,7 @@ small {
       padding: 20px; }
   .card .card-content {
     padding: 20px;
-    border-radius: 0 0 2px 2px; }
+    /*border-radius: 0 0 2px 2px;*/ }
     .card .card-content p {
       margin: 0;
       color: inherit; }
@@ -7040,6 +7040,7 @@ select {
     The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
     Code distributed by Google as part of the polymer project is also
     subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+    Modified by Roger Antonio Vandekerckhove.
  */
 /**************************/
 /* STYLES FOR THE SPINNER */

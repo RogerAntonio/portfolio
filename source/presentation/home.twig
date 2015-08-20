@@ -1,7 +1,9 @@
 {% extends 'templates/template.twig' %}
 
+    {% set title = 'Home' %}
+
     {% block title %}
-        Home
+        {{ title }}
     {% endblock %}
 
     {% block content %}
@@ -15,31 +17,31 @@
                             <svg id="rotate">
                                 <g>
                                     <!-- All text that you want -->
-                                    <text class="flow-text quote" id="title" x="50%" y="0" dy="9.5em">
+                                    <text class="flow-text quote" id="title" x="50%" y="255px" dy="0">
                                         &quot;This mod is going places&quot;
                                     </text>
-                                    <text id="subtitle" class="flow-text quote" x="50%" y="0" dy="14.5em">- Vetyver, CEO super-earth.net</text>
+                                    <text id="subtitle" class="flow-text quote" x="50%" y="280px" dy="0">- Vetyver, CEO super-earth.net</text>
                                 </g>
                                 <g>
                                     <!-- All text that you want -->
-                                    <text class="flow-text quote" id="title" x="50%" y="0" dy="9.5em">
+                                    <text class="flow-text quote" id="title" x="50%" y="255px" dy="0">
                                         &quot;Perfect!&quot;
                                     </text>
-                                    <text id="subtitle" class="flow-text quote" x="50%" y="0" dy="14.5em">- ARCHEMIN.BE</text>
+                                    <text id="subtitle" class="flow-text quote" x="50%" y="280px" dy="0">- ARCHEMIN.BE</text>
                                 </g>
                                 <g>
                                     <!-- All text that you want -->
-                                    <text class="flow-text quote" id="title" x="50%" y="0" dy="9.5em">
+                                    <text class="flow-text quote" id="title" x="50%" y="255px" dy="0">
                                         &quot;You freak! That's amazing..&quot;
                                     </text>
-                                    <text id="subtitle" class="flow-text quote" x="50%" y="0" dy="14.5em">- Some Stranger</text>
+                                    <text id="subtitle" class="flow-text quote" x="50%" y="280px" dy="0">- Some Stranger</text>
                                 </g>
                                 <g>
                                     <!-- All text that you want -->
-                                    <text class="flow-text quote" id="title" x="50%" y="0" dy="9.5em">
+                                    <text class="flow-text quote" id="title" x="50%" y="255px" dy="0">
                                         &quot;Bad with Deadlines, but always delivers!&quot;
                                     </text>
-                                    <text id="subtitle" class="flow-text quote" x="50%" y="0" dy="14.5em">- Anonymous Client</text>
+                                    <text id="subtitle" class="flow-text quote" x="50%" y="280px" dy="0">- Anonymous Client</text>
                                 </g>
                             </svg>
 
@@ -89,22 +91,72 @@
                     <use mask="url(#Mask)" fill="rgba(255,255,255,0.45)" xlink:href="#svg_logo"/>
                 </svg>
                 <div class="transparent_bg padding-1">
-                    
-                    <div class="card small">
-                        <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="images/social/tile-wide.png">
+                    <h2><!-- Promotional grid --></h2>
+                    <div class="row white-text">
+                        <div class="col s12 m4 l4">
+                            <div class="center promo">
+                                <i class="fa fa-bolt fa-5x"></i>
+                                <p class="promo-caption">Speeds up development</p>
+                                <p class="light center grey-text">At some old gable-roofed country houses you will see brass whales hung by the tail for knockers to the road-side door.</p>
+                            </div>
                         </div>
-                        <div class="card-content">
-                            <span class="card-title activator grey-text text-darken-4 fullwidth">Card Title<i class="fa fa-ellipsis-v right padding-left-1 padding-right-1" style="line-height: 48px;"></i></span>
-                            <p class="section"><a href="#">View full project</a></p>
+                        <div class="col s12 m4 l4">
+                            <div class="center promo">
+                                <i class="fa fa-code fa-5x"></i>
+                                <p class="promo-caption">Crossbrowser code</p>
+                                <p class="light center grey-text">The old man accelerated his pace, sniffing eagerly as he neared the fire. "Mussels!" he muttered ecstatically.</p>
+                            </div>
                         </div>
-                        <div class="card-reveal">
-                            <span class="card-title grey-text text-darken-4 fullwidth">Card Title<i class="fa fa-times right padding-left-1 padding-right-1"></i></span>
-                            <p class="section">Here is some more information about this product that is only revealed once clicked on.</p>
-                            <p class="section"><a href="#">View full project</a></p>
+                        <div class="col s12 m4 l4">
+                            <div class="center promo">
+                                <i class="fa fa-magic fa-5x"></i>
+                                <p class="promo-caption">Where magic happens</p>
+                                <p class="light center grey-text">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components.</p>
+                            </div>
                         </div>
                     </div>
-            
+                </div>
+    {% endblock %}
+
+    {% block newscontent %}
+
+                <div class="transparent_bg padding-1">
+
+                    <h2 class="white-text thin">Recent News</h2>
+
+                    <article>
+                        <div class="card small">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="http://i.imgur.com/7VMhRmG.gif">
+                            </div>
+                            <div class="card-content grey darken-4 white-text">
+                                <span class="card-title activator fullwidth">Cinemagraphy<i class="fa fa-ellipsis-v right padding-left-1 padding-right-1" style="line-height: 48px;"></i></span>
+                                <p class="section"><a href="#">View full album</a></p>
+                            </div>
+                            <div class="card-reveal grey darken-4 white-text">
+                                <span class="card-title fullwidth">Cinemagraphy<i class="fa fa-times right padding-left-1 padding-right-1"></i></span>
+                                <p class="section grey-text">My latest hobby consists of making cinemagraphs. It is becoming an addiction.<br>Together with my brand new Nikon DSLR D5200, I travel the streets of Antwerp to capture a scene in a never ending loop.</p>
+                                <p class="section"><a href="#">View full album</a></p>
+                            </div>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="card small">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="http://i.imgur.com/XXIfVCk.jpg">
+                            </div>
+                            <div class="card-content grey darken-4 white-text">
+                                <span class="card-title activator fullwidth">Photo Restorations<i class="fa fa-ellipsis-v right padding-left-1 padding-right-1" style="line-height: 48px;"></i></span>
+                                <p class="section"><a target="_blanc" href="http://i.imgur.com/XXIfVCk.jpg">View full image</a></p>
+                            </div>
+                            <div class="card-reveal grey darken-4 white-text">
+                                <span class="card-title fullwidth">Photo Restorations<i class="fa fa-times right padding-left-1 padding-right-1"></i></span>
+                                <p class="section grey-text">Over the past years I have been restoring old photographs for friends and family. I love doing these and if you have some that require my attention, send them to me and I will try my best to restore the lost memories of your beloved ones.</p>
+                                <p class="section"><a target="_blanc" href="http://i.imgur.com/XXIfVCk.jpg">View full image</a></p>
+                            </div>
+                        </div>
+                    </article>
 
                 </div>
+
     {% endblock %}

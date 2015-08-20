@@ -17,7 +17,7 @@
 
 html {
     color: #222;
-    font-size: 1em;
+    /*font-size: 1em;*/
     line-height: 1.4;
 }
 
@@ -163,6 +163,16 @@ textarea {
     text-align: right !important;
 }
 
+
+.padding-1{
+    padding:1em;
+}
+.padding-right-1{
+    padding-right:0.5em;
+}
+.padding-left-1{
+    padding-left:0.5em;
+}
 
 /*
  * Hide only visually, but have it available for screen readers:
