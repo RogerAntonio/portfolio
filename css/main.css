@@ -163,6 +163,30 @@ textarea {
     text-align: right !important;
 }
 
+/*
+ * removing styling:
+ */
+
+.no_bg{
+    background: none !important;
+    background-color: none !important;
+    background-image: none !important;
+}
+
+.no_border{
+    border: none !important;
+    border-color: none !important;
+    border-image: none !important;
+    border-style: none !important;
+}
+
+.no_radius{
+    border-radius: none !important;
+}
+
+/*
+ * Pre-set Paddings:
+ */
 
 .padding-1{
     padding:1em;

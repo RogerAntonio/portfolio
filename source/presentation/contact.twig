@@ -1,0 +1,83 @@
+{% extends 'templates/template.twig' %}
+
+    {% set title = 'Stalk and Contact me' %}
+
+    {% block title %}
+        {{ title }}
+    {% endblock %}
+
+    {% block content %}
+                
+                <section class="transparent_bg padding-1">
+                    <h2 class="white-text thin">Contact or Stalk me!</h2>
+
+                    <div class="row white-text">
+                        <div class="col s12 m8 l8">
+                            {# Contact form #}
+                            <form action="contact.php?action=process">
+                                
+                                <div class="row">
+                                    <div class="input-field col s6">
+                                        <input id="first_name" type="text" class="fullwidth" required>
+                                        <label for="first_name" class="req">First Name</label>
+                                    </div>
+                                    <div class="input-field col s6">
+                                        <input id="last_name" type="text" class="fullwidth">
+                                        <label for="last_name" class="opt">Last Name</label>
+                                    </div>
+                                </div>
+                                {#<div class="row">
+                                    <div class="input-field col s12">
+                                        <input disabled value="I am not editable" id="disabled" type="text" class="validate">
+                                        <label for="disabled">Disabled</label>
+                                    </div>
+                                </div>#}
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <input id="email" type="email" class="validate" required>
+                                        <label for="email" data-error="This is not a valid email address." data-success="Looks like a valid email address :D" class="fullwidth">Email</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <input id="website" type="text" class="fullwidth">
+                                        <label for="website">Website</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <textarea id="textarea1" class="materialize-textarea" required></textarea>
+                                        <label for="textarea1">Message</label>
+                                    </div>
+                                </div>
+                                <div class="file-field input-field">
+                                    <div class="btn btn-flat waves-effect waves-light white-text">
+                                        <span>Attachement</span>
+                                        <input type="file" />
+                                    </div>
+                                    <div class="file-path-wrapper">
+                                        <input class="file-path validate" type="text">
+                                    </div>
+                                </div>
+
+                                <button class="btn btn-flat waves-effect waves-light white-text" type="submit" name="action">
+                                    Submit
+                                </button>
+
+                            </form>
+                        </div>
+                        
+                        <div class="col s12 m4 l4">
+                            {# Stalking list #}
+                            <div class="collection no_border no_radius">
+                                <a href="#!" class="collection-item no_border"><i class="fa fa-twitter" title="twitter"></i> Twitter</a>
+                                <a href="#!" class="collection-item no_border"><i class="fa fa-facebook" title="Facebook"></i> Facebook</a>
+                                <a href="#!" class="collection-item no_border"><i class="fa fa-github" title="Github"></i> Github</a>
+                                <a href="#!" class="collection-item no_border"><i class="fa fa-whatsapp" title="Whatsapp"></i> Whatsapp</a>
+                                <a href="#!" class="collection-item no_border disabled"><i class="fa fa-github" title="Beme"></i> Beme</a>
+                                <a href="#!" class="collection-item no_border disabled"><i class="fa fa-youtube" title="Youtube"></i> Youtube</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+    {% endblock %}

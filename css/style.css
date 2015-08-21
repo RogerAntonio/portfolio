@@ -119,9 +119,16 @@ svg #base {
     background: none;
 }
 
-.transparent_bg, #navigation li a.active{
+.transparent_bg,
+.btn,
+#navigation li a.active{
     background-color: rgba(0, 0, 0, 0.45);
 }
+
+.btn:hover{
+    background-color: rgba(0, 0, 0, 0.65);
+}
+
 .side-nav a{
     color: white;
     padding-left: 2em;
@@ -169,6 +176,63 @@ svg #base {
     margin-top: 2em;
 }
 
+.req{
+    content: " (required)";
+    color: salmon;
+}
+
+.opt{
+    content: " (optional)";
+    color: grey;
+}
+
+  /* label color */
+   .input-field label {
+     color: white;
+   }
+   /* label focus color */
+   .input-field input[type=text]:focus + label,
+   .input-field input[type=email]:focus + label,
+   .input-field input[type=tel]:focus + label,
+   .input-field input[type=file]:focus + label,
+   .input-field textarea:focus + label,
+   textarea.materialize-textarea:focus:not([readonly]) + label {
+     color: white;
+   }
+   /* label underline focus color */
+   .input-field input[type=text]:focus,
+   .input-field input[type=email]:focus,
+   .input-field input[type=tel]:focus,
+   .input-field input[type=file]:focus,
+   .input-field textarea:focus,
+   textarea.materialize-textarea:focus:not([readonly]) {
+     border-bottom: 1px solid white;
+     box-shadow: 0 1px 0 0 white;
+   }
+   /* valid color */
+   .input-field input[type=text].valid,
+   .input-field input[type=email].valid,
+   .input-field input[type=tel].valid,
+   .input-field input[type=file].valid {
+     border-bottom: 1px solid limegreen;
+     box-shadow: 0 1px 0 0 limegreen;
+   }
+   /* invalid color */
+   .input-field input[type=text].invalid,
+   .input-field input[type=email].invalid,
+   .input-field input[type=tel].invalid,
+   .input-field input[type=file].invalid {
+     border-bottom: 1px solid salmon;
+     box-shadow: 0 1px 0 0 salmon;
+   }
+   /* icon prefix focus color */
+   .input-field .prefix.active {
+     color: white;
+   }
+
+
+
+
 @media only screen and (max-width : 601px){ /* Mobile fixes */
     .side-nav{
         position: initial;
@@ -179,3 +243,4 @@ svg #base {
         margin-bottom: 2em;
     }
 }
+
