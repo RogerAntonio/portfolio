@@ -81,10 +81,10 @@
                       <div class="side-nav col s12 m3 l2 no-padding card-reveal transparent_bg">
                         <!-- Navigation panel -->
 
-
+                        <!-- Profile Image or logo -->
+                            <img id="profile_pic" class="responsive-img" src="images/profile{{ random([1]) }}.jpg" data-caption="Roger Antonio">{# class="materialboxed" is bugged #}
                             <div class="container center section">
-                                <!-- Profile Image or logo -->
-                                <img id="profile_pic" class="materialboxed responsive-img circle" src="images/profile.jpg" data-caption="Roger Antonio">{# class="materialboxed" is bugged #}
+                                
 
                                 <!-- Social buttons -->
                                 <div id="social-icons" class="clearfix">
@@ -99,9 +99,9 @@
                             <ul id="navigation">
                                 <!-- Navigation buttons -->
                                 <li><a href="index.php" class="waves-effect waves-light {% if title == 'Home' %}active{% endif %}">Home</a></li>
-                                <li><a href="#" class="waves-effect waves-light">About</a></li>
-                                <li><a href="#" class="waves-effect waves-light">Blog</a></li>
-                                <li><a href="#" class="waves-effect waves-light">Projects</a></li>
+                                <li><a href="#" class="waves-effect waves-light {% if title == 'About' %}active{% endif %}">About</a></li>
+                                <li><a href="#" class="waves-effect waves-light {% if title == 'Blog' %}active{% endif %}">Blog</a></li>
+                                <li><a href="#" class="waves-effect waves-light {% if title == 'Projects' %}active{% endif %}">Projects</a></li>
                                 <li><a href="contact.php" class="waves-effect waves-light {% if title == 'Stalk and Contact me' %}active{% endif %}">Contact</a></li>
                             </ul>
                         </div>

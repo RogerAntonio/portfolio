@@ -176,14 +176,20 @@ svg #base {
     margin-top: 2em;
 }
 
-.req{
+.input-field .req:after{
     content: " (required)";
     color: salmon;
+    opacity: 1;
+    position: initial;
+    float: right;
 }
 
-.opt{
+.input-field .opt:after{
     content: " (optional)";
     color: grey;
+    opacity: 1;
+    position: initial;
+    float: right;
 }
 
   /* label color */
