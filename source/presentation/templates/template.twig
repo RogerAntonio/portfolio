@@ -82,26 +82,28 @@
                         <!-- Navigation panel -->
 
                         <!-- Profile Image or logo -->
-                            <img id="profile_pic" class="responsive-img" src="images/profile{{ random([1]) }}.jpg" data-caption="Roger Antonio">{# class="materialboxed" is bugged #}
-                            <div class="container center section">
-                                
-
-                                <!-- Social buttons -->
-                                <div id="social-icons" class="clearfix">
-                                    <a class="left valign-wrapper waves-effect waves-light" href="https://www.facebook.com/roger.antonio.vandekerckhove" target="_blank"><i class="fa fa-facebook" title="Facebook"></i></a>
-                                    <a class="left valign-wrapper waves-effect waves-light" href="#" target="_blank"><i class="fa fa-twitter" title="Twitter"></i></a>
-                                    <a class="left valign-wrapper waves-effect waves-light" href="https://github.com/RogerAntonio" target="_blank"><i class="fa fa-github" title="Github"></i></a>
-                                    <a class="left valign-wrapper waves-effect waves-light" href="https://github.com/RogerAntonio" target="_blank"><i class="fa fa-whatsapp" title="Whatsapp"></i></a>
-                                    <a class="left valign-wrapper waves-effect waves-light" href="https://github.com/RogerAntonio" target="_blank"><i class="fa fa-envelope" title="Email"></i></a>
-                                </div>
-                            </div>
+                            <div class="row profile_image_container hide-on-small-only"><img id="profile_pic" class="responsive-img" src="images/profile{{ random(6) }}.jpg" data-caption="Roger Antonio" alt="Photo of Roger Antonio"></div>
 
                             <ul id="navigation">
                                 <!-- Navigation buttons -->
                                 <li><a href="index.php" class="waves-effect waves-light {% if title == 'Home' %}active{% endif %}">Home</a></li>
-                                <li><a href="#" class="waves-effect waves-light {% if title == 'About' %}active{% endif %}">About</a></li>
                                 <li><a href="#" class="waves-effect waves-light {% if title == 'Blog' %}active{% endif %}">Blog</a></li>
-                                <li><a href="#" class="waves-effect waves-light {% if title == 'Projects' %}active{% endif %}">Projects</a></li>
+                                <ul class="collapsible collapsible-accordion">
+                                    <li>
+                                        <a href="#!" class="waves-effect waves-light {% if title == 'Projects' %}active{% endif %} collapsible-header">Projects<i class="fa fa-caret-down"></i><i class="fa fa-caret-up"></i></a>
+                                        <div class="collapsible-body">
+                                            <ul>
+                                                <li><a class="waves-effect waves-light {% if title == 'Cinemagraphy' %}active{% endif %}" href="#!">Cinemagraphy</a></li>
+                                                <li><a class="waves-effect waves-light {% if title == 'Graphic Design' %}active{% endif %}" href="#!">Graphic Design</a></li>
+                                                <li><a class="waves-effect waves-light {% if title == 'Illustrator' %}active{% endif %}" href="#!">Illustrator</a></li>
+                                                <li><a class="waves-effect waves-light {% if title == 'Logo Design' %}active{% endif %}" href="#!">Logo Design</a></li>
+                                                <li><a class="waves-effect waves-light {% if title == 'Photo Restorations' %}active{% endif %}" href="#!">Photo Restorations</a></li>
+                                                <li><a class="waves-effect waves-light {% if title == 'Photography' %}active{% endif %}" href="#!">Photography</a></li>
+                                                <li><a class="waves-effect waves-light {% if title == 'Web Design' %}active{% endif %}" href="#!">Web Design</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
                                 <li><a href="contact.php" class="waves-effect waves-light {% if title == 'Stalk and Contact me' %}active{% endif %}">Contact</a></li>
                             </ul>
                         </div>

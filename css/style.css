@@ -124,6 +124,25 @@ svg #base {
 #navigation li a.active{
     background-color: rgba(0, 0, 0, 0.45);
 }
+#navigation ul li.active, #navigation ul li a.active{
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+#navigation ul li.active i.fa.fa-caret-down{
+    display: none;
+}
+#navigation ul li i.fa.fa-caret-down{
+    display: inline-block;
+    font-size: 1em;
+}
+#navigation ul li.active i.fa.fa-caret-up{
+    display: inline-block;
+}
+#navigation ul li i.fa.fa-caret-up{
+    display: none;
+    font-size: 1em;
+
+}
 
 .btn:hover{
     background-color: rgba(0, 0, 0, 0.65);
@@ -151,8 +170,18 @@ svg #base {
     text-align: center;
 }
 
-#navigation li:hover, #social-icons a:hover{
+#navigation li a:hover, #social-icons a:hover{
     background-color: rgba(0, 0, 0, 0.45);
+}
+#navigation ul li ul li:hover{
+    background-color: rgba(0, 0, 0, 0.45);
+}
+#navigation ul li ul li a:hover{
+    background-color: transparent;
+}
+#navigation ul li ul li a{
+    height: 32px;
+    line-height: 32px;
 }
 
 #navigation li{
@@ -160,8 +189,19 @@ svg #base {
 }
 
 #profile_pic{
-    max-width: 22em;
-    width: 100%;
+  position: relative;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.row.profile_image_container{
+    max-height: 22em;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 0;
 }
 
 .quote{
@@ -195,6 +235,7 @@ svg #base {
   /* label color */
    .input-field label {
      color: white;
+     margin-left: 0.5em;
    }
    /* label focus color */
    .input-field input[type=text]:focus + label,
@@ -236,8 +277,26 @@ svg #base {
      color: white;
    }
 
+   /* overwriting user agent autofill styling */
+input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    background-color: rgba(250, 255, 189,0) !important;
+    background: rgba(250, 255, 189,0) !important;
+    color: white !important;
+    -webkit-box-shadow: none;
+    -webkit-text-fill-color: white !important;
+    transition: background-color 10000s ease-in-out 0s;
+}
 
 
+.collection .collection-item .fa{  
+    display: inline-block;
+    width: 20px;
+    margin-right: 1em;
+    text-align: center;
+}
 
 @media only screen and (max-width : 601px){ /* Mobile fixes */
     .side-nav{
@@ -248,5 +307,22 @@ svg #base {
         margin-top: 1em;
         margin-bottom: 2em;
     }
+
+    #profile_pic{
+        margin-top: -20%;
+    }
 }
 
+@media only screen and (max-width : 992px){
+
+    .collection .collection-item{
+        font-size: 0.8em;
+        padding: 10px 10px;
+    }
+
+    .collection .collection-item .fa{
+        width: 16px;
+        margin-right: 0.5em;
+        text-align: center;
+    }
+}

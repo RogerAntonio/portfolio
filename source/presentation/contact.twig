@@ -14,31 +14,21 @@
                     <div class="row white-text">
                         <div class="col s12 m8 l8">
                             {# Contact form #}
-                            <form action="contact.php?action=process">
+                            <form action="contact.php?action=process" autocomplete="off">
                                 
                                 <div class="row">
-                                    <div class="input-field col s12 m6 l6">
+                                    <div class="input-field col s12 m12 l6">
                                         <input id="first_name" type="text" required>
                                         <label for="first_name" class="req">First Name&nbsp;</label>
                                     </div>
-                                    <div class="input-field col s12 m6 l6">
+                                    <div class="input-field col s12 m12 l6">
                                         <input id="last_name" type="text">
                                         <label for="last_name" class="opt">Last Name&nbsp;</label>
                                     </div>
-                                </div>
-                                {#<div class="row">
-                                    <div class="input-field col s12">
-                                        <input disabled value="I am not editable" id="disabled" type="text" class="validate">
-                                        <label for="disabled">Disabled</label>
-                                    </div>
-                                </div>#}
-                                <div class="row">
                                     <div class="input-field col s12">
                                         <input id="email" type="email" class="validate" required>
                                         <label for="email" data-error="This is not a valid email address." data-success="Looks like a valid email address :D" class="req">Email&nbsp;</label>
                                     </div>
-                                </div>
-                                <div class="row">
                                     <div class="input-field col s12">
                                         <input id="website" type="text">
                                         <label for="website" class="opt">Website&nbsp;</label>
@@ -67,15 +57,15 @@
                             </form>
                         </div>
                         
-                        <div class="col s12 m4 l4">
+                        <div class="col s12 m4 l4 hide-on-small-only">
                             {# Stalking list #}
                             <div class="collection no_border no_radius">
-                                <a href="#!" class="collection-item no_border"><i class="fa fa-twitter" title="twitter"></i> Twitter</a>
-                                <a href="#!" class="collection-item no_border"><i class="fa fa-facebook" title="Facebook"></i> Facebook</a>
-                                <a href="#!" class="collection-item no_border"><i class="fa fa-github" title="Github"></i> Github</a>
-                                <a href="#!" class="collection-item no_border"><i class="fa fa-whatsapp" title="Whatsapp"></i> Whatsapp</a>
-                                <a href="#!" class="collection-item no_border disabled"><i class="fa fa-github" title="Beme"></i> Beme</a>
-                                <a href="#!" class="collection-item no_border disabled"><i class="fa fa-youtube" title="Youtube"></i> Youtube</a>
+                                <a href="https://twitter.com/_RogerAntonio" target="_blanc" class="waves-effect waves-light collection-item no_border"><i class="fa fa-twitter" title="twitter"></i> Twitter</a>
+                                <a href="#!" target="_blanc" class="waves-effect waves-light collection-item no_border"><i class="fa fa-facebook" title="Facebook"></i> Facebook</a>
+                                <a href="#!" target="_blanc" class="waves-effect waves-light collection-item no_border"><i class="fa fa-github" title="Github"></i> Github</a>
+                                <a href="#!" target="_blanc" class="waves-effect waves-light collection-item no_border"><i class="fa fa-whatsapp" title="Whatsapp"></i> Whatsapp</a>
+                                <a href="#!" target="_blanc" class="waves-effect waves-light collection-item no_border disabled"><i class="fa fa-github" title="Beme"></i> Beme</a>
+                                <a href="#!" target="_blanc" class="waves-effect waves-light collection-item no_border disabled"><i class="fa fa-youtube" title="Youtube"></i> Youtube</a>
                             </div>
                         </div>
                     </div>
