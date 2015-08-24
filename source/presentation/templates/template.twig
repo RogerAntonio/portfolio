@@ -175,11 +175,25 @@
                     })(jQuery);
 
                     $(document).ready(function() {
-                    $('#rotate').rotaterator({
-                    fadeSpeed: 500,
-                    pauseSpeed: 2000
-                    });
+                        $('#rotate').rotaterator({
+                        fadeSpeed: 500,
+                        pauseSpeed: 2000
+                        });
                     });
             </script>
+
+            {% if title == 'Stalk and Contact me' %}
+                <script type="text/javascript">
+                    $(document).ready(function(){
+                        // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+                        $('.modal-trigger').leanModal({
+                            dismissible: true, // Modal can be dismissed by clicking outside of the modal
+                            opacity: .5, // Opacity of modal background
+                            in_duration: 300, // Transition in duration
+                            out_duration: 200, // Transition out duration
+                        });
+                    });
+                </script>
+            {% endif %}
         </body>
     </html>

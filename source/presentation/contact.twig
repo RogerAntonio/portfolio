@@ -50,11 +50,34 @@
                                     </div>
                                 </div>
 
-                                <button class="btn btn-flat waves-effect waves-light white-text" type="submit" name="action">
-                                    Submit
-                                </button>
 
+                                <!-- Modal Trigger -->
+                                <a class="modal-trigger waves-effect waves-light btn" href="#modal1">Submit</a>
+
+                                <!-- Modal Structure -->
+                                <div id="modal1" class="modal modal-fixed-footer">
+                                    <div class="modal-content black-text">
+                                        <h4>Contact Agreement</h4>
+                                        <p>By contacting me through this form you agree that the following statements are true:</p>
+                                        <ol>
+                                            <li>You confirm the required information you are about to send to me is accurate.</li>
+                                            <li>You agree that you allow me to respond to your message using the email address included in the form.</li>
+                                            <li>You are not a bot.</li>
+                                            <li>You are not trying to use a bot.</li>
+                                            <li>You are not asking me to work Pro Bono (exceptions can be made for Photo restorations).</li>
+                                            <li>You have not attached any files that could be containing malicious or pornographic content.</li>
+                                            <li>You are currently not fighting any religious battles or killing infidels.</li>
+                                        </ol>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="modal-action modal-close waves-effect waves-green btn-flat" type="submit" name="submit">
+                                            Agree
+                                        </button>
+                                        <a href="#!" class="modal-action modal-close waves-effect waves-red btn-flat">Cancel</a>
+                                    </div>
+                                </div>
                             </form>
+
                         </div>
                         
                         <div class="col s12 m4 l4 hide-on-small-only">
