@@ -244,7 +244,8 @@ svg #base {
    .input-field input[type=tel]:focus + label,
    .input-field input[type=file]:focus + label,
    .input-field textarea:focus + label,
-   textarea.materialize-textarea:focus:not([readonly]) + label {
+   textarea.materialize-textarea:focus:not([readonly]) + label,
+   .input-field input[type=password]:focus + label {
      color: white;
    }
    /* label underline focus color */
@@ -253,7 +254,8 @@ svg #base {
    .input-field input[type=tel]:focus,
    .input-field input[type=file]:focus,
    .input-field textarea:focus,
-   textarea.materialize-textarea:focus:not([readonly]) {
+   textarea.materialize-textarea:focus:not([readonly]),
+   .input-field input[type=password]:focus {
      border-bottom: 1px solid white;
      box-shadow: 0 1px 0 0 white;
    }
@@ -261,7 +263,8 @@ svg #base {
    .input-field input[type=text].valid,
    .input-field input[type=email].valid,
    .input-field input[type=tel].valid,
-   .input-field input[type=file].valid {
+   .input-field input[type=file].valid,
+   .input-field input[type=password].valid {
      border-bottom: 1px solid limegreen;
      box-shadow: 0 1px 0 0 limegreen;
    }
@@ -269,7 +272,8 @@ svg #base {
    .input-field input[type=text].invalid,
    .input-field input[type=email].invalid,
    .input-field input[type=tel].invalid,
-   .input-field input[type=file].invalid {
+   .input-field input[type=file].invalid,
+   .input-field input[type=password].invalid {
      border-bottom: 1px solid salmon;
      box-shadow: 0 1px 0 0 salmon;
    }
@@ -309,6 +313,19 @@ input:-webkit-autofill:active {
     padding-top: 1em;
 }
 
+#login_image{
+  margin-top: -23%;
+}
+
+.logincardheight{
+    height: 120px !important;
+}
+
+#login_form .card .card-image{
+  height: 150px;
+  overflow: hidden;
+}
+
 @media only screen and (max-width : 601px){ /* Mobile fixes */
     .side-nav{
         position: initial;
@@ -322,6 +339,11 @@ input:-webkit-autofill:active {
     #profile_pic{
         margin-top: -20%;
     }
+
+    .logincardheight{
+        height: 190px !important;
+    }
+
 }
 
 @media only screen and (max-width : 992px){

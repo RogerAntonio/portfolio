@@ -1,0 +1,43 @@
+{% extends 'templates/template.twig' %}
+
+    {% set title = 'MELON!' %}
+
+    {% block title %}
+        {{ title }}
+    {% endblock %}
+
+    {% block content %}
+                
+                <section class="transparent_bg padding-1 center-align">
+                    <h2 class="white-text thin">What is "friend" in Elfish?!</h2>
+
+                    <div class="row white-text valign-wrapper">
+                        <div class="col s12 m8 center-block">
+                            <form id="login_form" action="login.php?process" method="POST" autocomplete="off">
+                                <div class="card valign">
+                                    <div class="card-image">
+                                        <img alt="login image" id="login_image" src="images/profile6.jpg">
+                                        <span class="card-title"></span>
+                                    </div>
+                                    <div class="card-content logincardheight transparent_bg">
+                                        <div class="row">
+                                            <div class="input-field col s12 m6">
+                                                <input type="text" id="username" name="username" required>
+                                                <label for="username">Username</label>
+                                            </div>
+                                            <div class="input-field col s12 m6">
+                                                <input type="password" id="pw" name="pw" required>
+                                                <label for="pw">Password</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-action no-padding transparent_bg">
+                                        <button class="white-text waves-effect waves-green btn-flat fullwidth padding-1" type="submit" name="submit" style="
+  height: inherit;">Login</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+    {% endblock %}
