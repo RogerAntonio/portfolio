@@ -52,6 +52,7 @@ body{
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
+    min-width: 320px;
 
 }
 body#error404{
@@ -296,6 +297,16 @@ input:-webkit-autofill:active {
     width: 20px;
     margin-right: 1em;
     text-align: center;
+}
+
+.modal ol,
+.modal ul{
+    margin:0 2em;
+}
+.modal ol li,
+.modal ul li{
+    padding-left: 0.5em;
+    padding-top: 1em;
 }
 
 @media only screen and (max-width : 601px){ /* Mobile fixes */
