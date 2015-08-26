@@ -28,6 +28,7 @@
                     <h2 class="white-text thin">{{ subpage }}</h2>
 
                             {% if page == 'cinemagraphy' %}
+                                <h3 class="white-text thin">Image Viewer with hover details. Large, default, small</h3>
                                 <div class="row">
                                     <div class="col s12">
                                         <article class="racard large">
@@ -47,7 +48,7 @@
                                         </article>
                                     </div>
                                 </div>
-                                <div class="row">                                
+                                <div class="row">
                                     <div class="col s12 m10 l8">
                                         <article class="racard">
                                             <div class="racard-image-wrapper">
@@ -77,6 +78,117 @@
                                         </article>
                                     </div>
                                 </div>
+
+                                <h3 class="white-text thin">Size test. Large, default, small. Dark/Light Theme</h3>
+
+                                <div class="row">
+                                    <div class="col s12">
+                                        <article class="racard large">
+                                            <div class="racard-image-wrapper">
+                                                <img class="racard-image" src="http://i.imgur.com/XXIfVCk.jpg" />
+                                            </div>
+                                            {#<div class="racard-info-trigger">
+                                                <a href="#!">
+                                                    <i class="fa fa-info-circle"></i>
+                                                </a>
+                                            </div>#}
+                                            <div class="hoverinfo light racard-content-wrapper">
+                                                <h4 class="racard-title thin">Summer Storm Evening</h4>
+                                                <p class="racard-content">Antwerp, August 13th.</p>
+                                                <p class="racard-content">Big storm rolling over us makes for a sleepless but fascinating night, perfect for storm lovers like me!</p>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </div>
+                                <div class="row">                                
+                                    <div class="col s12 m10 l8">
+                                        <article class="racard">
+                                            <div class="racard-image-wrapper">
+                                                <img class="racard-image" src="http://i.imgur.com/XXIfVCk.jpg" />
+                                            </div>
+                                            <div class="hoverinfo dark racard-content-wrapper">
+                                                <h4 class="racard-title thin">Summer Storm Evening</h4>
+                                                <p class="racard-content">Antwerp, August 13th.</p>
+                                                <p class="racard-content">Big storm rolling over us makes for a sleepless but fascinating night, perfect for storm lovers like me!</p>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col s12 m8 l6">
+                                        <article class="racard small">
+                                            <div class="racard-image-wrapper">
+                                                <img class="racard-image" src="http://i.imgur.com/XXIfVCk.jpg" />
+                                            </div>
+                                            <section class="racard-content-wrapper">
+                                                <div class="hoverinfo light">
+                                                    <h4 class="racard-title thin">Summer Storm Evening</h4>
+                                                    <p class="racard-content">Antwerp, August 13th.</p>
+                                                    <p class="racard-content">Big storm rolling over us makes for a sleepless but fascinating night, perfect for storm lovers like me!</p>
+                                                </div>
+                                            </section>
+                                        </article>
+                                    </div>
+                                </div>
+
+
+                            <h3 class="white-text thin">Before/After Image Viewers</h3>
+
+
+                                <div class="row">
+                                    <div class="col s12">
+                                        <article class="racard large">
+                                            <div class="racard-image-wrapper">
+                                                <span class="racard-image before" style="background-image:url('http://i.imgur.com/MRcOzM4.jpg')" />
+                                                <span class="racard-image after" style="background-image:url('http://i.imgur.com/xcv4Z59.jpg')" />
+                                            </div>
+                                            {# <section class="racard-content-wrapper">
+                                                <div class="hoverinfo light">
+                                                    <h4 class="racard-title thin">Summer Storm Evening</h4>
+                                                    <p class="racard-content">Antwerp, August 13th.</p>
+                                                    <p class="racard-content">Big storm rolling over us makes for a sleepless but fascinating night, perfect for storm lovers like me!</p>
+                                                </div>
+                                            </section> #}
+                                        </article>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col s12 m10 l8">
+                                        <article class="racard">
+                                            <div class="racard-image-wrapper">
+                                                <span class="racard-image before" style="background-image:url('http://i.imgur.com/MRcOzM4.jpg')" />
+                                                <span class="racard-image after" style="background-image:url('http://i.imgur.com/xcv4Z59.jpg')" />
+                                            </div>
+                                            {# <section class="racard-content-wrapper">
+                                                <div class="hoverinfo light">
+                                                    <h4 class="racard-title thin">Summer Storm Evening</h4>
+                                                    <p class="racard-content">Antwerp, August 13th.</p>
+                                                    <p class="racard-content">Big storm rolling over us makes for a sleepless but fascinating night, perfect for storm lovers like me!</p>
+                                                </div>
+                                            </section> #}
+                                        </article>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col s12 m8 l6">
+                                        <article class="racard small">
+                                            <div class="racard-image-wrapper">
+                                                <span class="racard-image before" style="background-image:url('http://i.imgur.com/MRcOzM4.jpg')" />
+                                                <span class="racard-image after" style="background-image:url('http://i.imgur.com/xcv4Z59.jpg')" />
+                                            </div>
+                                            {# <section class="racard-content-wrapper">
+                                                <div class="hoverinfo light">
+                                                    <h4 class="racard-title thin">Summer Storm Evening</h4>
+                                                    <p class="racard-content">Antwerp, August 13th.</p>
+                                                    <p class="racard-content">Big storm rolling over us makes for a sleepless but fascinating night, perfect for storm lovers like me!</p>
+                                                </div>
+                                            </section> #}
+                                        </article>
+                                    </div>
+                                </div>
+
 
                             {% endif %}
                         </div>

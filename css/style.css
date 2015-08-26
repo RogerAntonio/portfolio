@@ -348,23 +348,45 @@ input:-webkit-autofill:active {
     }
         .racard-image-wrapper{
             width: 100%;
+            height: 100%;
             overflow: hidden;
+            position: relative;
         }
         .racard img.racard-image{
             display: block;
             width: 100%;
         }
+
         .racard span.racard-image{
-            display: block;
             width: 100%;
-            /*height: 300px;*/
+            height: 350px; /* Not responsive */
+            display: block;
             background: transparent 50% 50% no-repeat;
             background-size: cover;
+            z-index: 1;
         }
-        .racard span.racard-hoverimage{
-            display: block;
+        .racard.small span.racard-image{
+            height: 250px; /* Not responsive */
+        }
+        .racard.large span.racard-image{
+            height: 450px; /* Not responsive */
+        }
+        .racard span.racard-image.after{
+            opacity: 1;
+            -webkit-transition: opacity 1s ease-in-out;
+            -moz-transition: opacity 1s ease-in-out;
+            -ms-transition: opacity 1s ease-in-out;
+            -o-transition: opacity 1s ease-in-out;
+            transition: opacity 1s ease-in-out;
+        }
+        .racard span.racard-image.after:hover{
+            opacity: 0;
+        }
 
+        .racard span.racard-image.after{
+            display: block;
         }
+
         .racard .hoverinfo{
             opacity: 0;
             -webkit-transition: opacity 1s ease-in-out;
@@ -386,10 +408,11 @@ input:-webkit-autofill:active {
         }
 
         .racard .hoverinfo.dark{
-            background-color: rgba(0,0,0,0.5);
+            background-color: rgba(0,0,0,0.7);
+            text-shadow: 0 1px 0 black;
         }
         .racard .hoverinfo.light{
-            background-color: rgba(255,255,255,0.6);
+            background-color: rgba(255,255,255,0.7);
         }
 
         .racard:hover .hoverinfo{
@@ -397,7 +420,7 @@ input:-webkit-autofill:active {
         }
         .racard-info-trigger{
             color: white;
-            text-shadow: 0 1px 4px rgba(255,255,255,0.6);
+            text-shadow: 0 1px 4px rgba(255,255,255,0.7);
             opacity: 0.4;
         }
         .racard .active{
