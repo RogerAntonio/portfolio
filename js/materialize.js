@@ -3226,6 +3226,31 @@ $(document).ready(function(){
     });
 
   });
+}( jQuery ));;(function ($) { /* RACARD INFO REVEALER */
+  $(document).ready(function() {
+
+    $(document).on('click.racard', '.racard', function (e) {
+      if ($(this).find('.racard-reveal').length) {
+        if ($(e.target).is($('.racard-reveal .deactivator i'))) {
+          // Make Reveal animate down and display none
+          $(this).find('.racard-reveal').velocity(
+            {translateX: '100%'}, {
+              duration: 1000,
+              queue: false,
+              easing: 'easeInOutQuad',
+              complete: function() { $(this).css({ display: 'none'}); }
+            }
+          );
+        }
+        else if ($(e.target).is($('.racard .activator i')) ) {
+          $(this).find('.racard-reveal').css({ display: 'block'}).velocity("stop", false).velocity({translateX: '0%'}, {duration: 1000, queue: false, easing: 'easeInOutQuad'});
+        }
+      }
+
+
+    });
+
+  });
 }( jQuery ));;(function ($) {
   $(document).ready(function() {
 

@@ -53,7 +53,6 @@ body{
     background-position: center center;
     background-attachment: fixed;
     min-width: 320px;
-
 }
 body#error404{
     background-image: url(../images/background/404.png);
@@ -335,7 +334,8 @@ input:-webkit-autofill:active {
     transition: box-shadow 0.25s;
     max-height: 350px;
     height: auto;
-    width: 100%;}
+    width: 100%;
+}
     .racard.small{
         height: auto;
         max-height: 250px;
@@ -344,6 +344,22 @@ input:-webkit-autofill:active {
     .racard.large{
         height: auto;
         max-height: 450px;
+        width: 100%;
+    }
+    .racard.high {
+        max-width: 550px;
+        height: 100%;
+        width: auto;
+    }
+    .racard.small.high{
+        height: 100%;
+        max-width: 420px;
+        width: 100%;
+    }
+    .racard.large.high{
+        height: 100%;
+        max-width: none;
+        max-height: none;
         width: 100%;
     }
         .racard-image-wrapper{
@@ -371,7 +387,19 @@ input:-webkit-autofill:active {
         .racard.large span.racard-image{
             height: 450px; /* Not responsive */
         }
+
+        .racard.high span.racard-image{
+            width: 350px; /* Not responsive */
+        }
+        .racard.small.high span.racard-image{
+            width: 250px; /* Not responsive */
+        }
+        .racard.large.high span.racard-image{
+            width: 756px; /* Not responsive */
+        }
+
         .racard span.racard-image.after{
+            z-index: 2;
             opacity: 1;
             -webkit-transition: opacity 1s ease-in-out;
             -moz-transition: opacity 1s ease-in-out;
@@ -418,16 +446,54 @@ input:-webkit-autofill:active {
         .racard:hover .hoverinfo{
             opacity: 1;
         }
-        .racard-info-trigger{
+        .racard-info-trigger.light a{
             color: white;
+            text-shadow: 0 1px 4px rgba(0,0,0,0.7);
+        }
+        .racard-info-trigger.dark a{
+            color: black;
             text-shadow: 0 1px 4px rgba(255,255,255,0.7);
-            opacity: 0.4;
+        }
+        .racard-info-trigger{
+            opacity: 0.6;
+            position: absolute;
+            right: 0;
+            top: 0;
+            font-size: 2em;
+            margin-right: 6px;
+            z-index: 10;
+            -webkit-transition: opacity 200ms ease-in-out;
+            -moz-transition: opacity 200ms ease-in-out;
+            -ms-transition: opacity 200ms ease-in-out;
+            -o-transition: opacity 200ms ease-in-out;
+            transition: opacity 200ms ease-in-out;
+        }
+        .racard-info-trigger:hover{
+            opacity: 0.8;
         }
         .racard .active{
             position: absolute;
             right: 0;
             top: 0;
-        }
+        }   
+            .racard .racard-reveal .slideinfo {
+                padding: 20px;
+                position: absolute;
+                background-color: rgba(255,255,255,0.8);
+                width: 100%;
+                overflow-y: auto;
+                height: 100%;
+                z-index: 1;
+            }
+            .racard-reveal{
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 10;
+                display: none;
+            }
             .racard-content-wrapper{
                 width: 100%;
                 height: auto;
@@ -470,6 +536,10 @@ input:-webkit-autofill:active {
 /* CUSTOM RESPONSIVE MEDIAQUERIES */
 
 @media only screen and (max-width : 600px){ /* Mobile fixes */
+
+    body{
+        background-image: url(../images/background/mobile_bg.jpg);
+    }
     .side-nav{
         position: initial;
     }
@@ -489,7 +559,7 @@ input:-webkit-autofill:active {
 
 }
 
-@media only screen and (max-width : 992px){
+@media only screen and (max-width : 992px){ /* Tablet fixes */
 
     .collection .collection-item{
         font-size: 0.8em;
