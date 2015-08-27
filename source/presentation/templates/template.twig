@@ -132,6 +132,7 @@
             <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
             <script type="text/javascript" src="js/materialize.js"></script>
             <script type="text/javascript">
+                <!-- Hide JavaScript
                 (function($) {
                     $.fn.extend({
                     rotaterator: function(options) {
@@ -180,10 +181,12 @@
                         pauseSpeed: 2000
                         });
                     });
+                    -->
             </script>
 
             {% if title == 'Stalk and Contact me' %}
                 <script type="text/javascript">
+                <!-- Hide JavaScript
                     $(document).ready(function(){
                         // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
                         $('.modal-trigger').leanModal({
@@ -193,7 +196,9 @@
                             out_duration: 200, // Transition out duration
                         });
                     });
+                    -->
                 </script>
             {% endif %}
+            <noscript><h3>Some features of this website require Javascript.</h3></noscript>
         </body>
     </html>
