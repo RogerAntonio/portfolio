@@ -347,13 +347,15 @@ input:-webkit-autofill:active {
         width: 100%;
     }
     .racard.high {
-        max-width: 550px;
+        max-width: none;
+        max-height: none;
         height: 100%;
         width: auto;
     }
     .racard.small.high{
         height: 100%;
-        max-width: 420px;
+        max-width: none;
+        max-height: none;
         width: 100%;
     }
     .racard.large.high{
@@ -389,13 +391,16 @@ input:-webkit-autofill:active {
         }
 
         .racard.high span.racard-image{
-            width: 350px; /* Not responsive */
+            width: auto; /* Not responsive */
+            height: 620px;
         }
         .racard.small.high span.racard-image{
-            width: 250px; /* Not responsive */
+            width: auto; /* Not responsive */
+            height: 460px;
         }
         .racard.large.high span.racard-image{
-            width: 756px; /* Not responsive */
+            width: auto; /* Not responsive */
+            height: 940px;
         }
 
         .racard span.racard-image.after{
