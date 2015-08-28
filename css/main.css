@@ -99,9 +99,17 @@ textarea {
 
 .browserupgrade {
     margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
+    background: salmon;
+    border: 1px solid #652d2a;
+
+    color: #652d2a;
+    text-shadow: 0px 1px 0px rgba(255,255,255,0.3);
+    padding: 0.5em 1em;
+    font-size: 1.2em;
+}
+
+.browserupgrade .fa{
+    margin-right: 10px;
 }
 
 /* ==========================================================================

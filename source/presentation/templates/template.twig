@@ -4,7 +4,7 @@
           xmlns:fb="https://www.facebook.com/2008/fbml">
         <head>
             <meta charset="utf-8">
-            <meta http-equiv="x-ua-compatible" content="ie=edge">
+            <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
             <title>{% block title %}{% endblock %} - Roger Antonio</title>
 
 
@@ -38,9 +38,12 @@
 
             <!-- CSS files -->
             <!--Import materialize.css-->
-            <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+            <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection"/>
             <link rel="stylesheet" type="text/css" href="css/normalize.css">
             <link rel="stylesheet" type="text/css" href="css/style.css">
+            <!--[if IE]>
+                <link rel="stylesheet" type="text/css" href="css/ie-only.css" />
+            <![endif]-->
 
             <!-- Font Icons -->
             <link rel="stylesheet" href="font/font-awesome/css/font-awesome.min.css">
@@ -66,9 +69,6 @@
         </head>
 
         <body>
-            <!--[if lt IE 8]>
-                <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-            <![endif]-->
             <header>
                 <!-- Header data goes here -->
             </header>
@@ -111,6 +111,9 @@
                     <div class="right col s12 m9 l10">
                         <!-- Page content  -->
                             <div id="main_container" class="container z-depth-1">
+                            <!--[if IE]>
+                                <p class="browserupgrade"><i class="fa fa-exclamation-circle"></i> You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+                            <![endif]-->
                                 {% block content %}{% endblock %}
                             </div>
                         {% if title == 'Home' %}

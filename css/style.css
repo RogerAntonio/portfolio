@@ -395,11 +395,11 @@ input:-webkit-autofill:active {
             height: 620px;
         }
         .racard.small.high span.racard-image{
-            width: auto; /* Not responsive */
+            /* Not responsive */
             height: 460px;
         }
         .racard.large.high span.racard-image{
-            width: auto; /* Not responsive */
+            /* Not responsive */
             height: 940px;
         }
 
@@ -516,6 +516,8 @@ input:-webkit-autofill:active {
                     display: block;
                     width: 100%;
                     padding: 0em 0.5em;
+                    margin-bottom: 0.4em;
+                    line-height: 1.4em;
                 }
                 .dark .racard-title{
                     color: white;
@@ -537,6 +539,70 @@ input:-webkit-autofill:active {
                 }
             .racard-link-wrapper{}
                 .racard-link{}
+
+/* CUSTOM NOTIFICATION DIALOGS */
+
+.error {
+    margin: 0.2em 0;
+    background: salmon;
+    border: 1px solid #652d2a;
+
+    color: #652d2a;
+    text-shadow: 0px 1px 0px rgba(255,255,255,0.3);
+    padding: 0.5em 1em;
+    font-size: 1.2em;
+}
+.info {
+    margin: 0.2em 0;
+    background: deepskyblue;
+    border: 1px solid #004C66;
+
+    color: #004C66;
+    text-shadow: 0px 1px 0px rgba(255,255,255,0.3);
+    padding: 0.5em 1em;
+    font-size: 1.2em;
+}
+.success {
+    margin: 0.2em 0;
+    background: limegreen;
+    border: 1px solid #104110;
+
+    color: #104110;
+    text-shadow: 0px 1px 0px rgba(255,255,255,0.3);
+    padding: 0.5em 1em;
+    font-size: 1.2em;
+}
+.attention {
+    margin: 0.2em 0;
+    background: sandybrown;
+    border: 1px solid #49311c;
+
+    color: #49311c;
+    text-shadow: 0px 1px 0px rgba(255,255,255,0.3);
+    padding: 0.5em 1em;
+    font-size: 1.2em;
+}
+
+.error .fa,
+.info .fa,
+.success .fa,
+.attention .fa{
+    margin-right: 10px;
+}
+.error a,
+.info a,
+.success a,
+.attention a{
+    color: #002633;
+    text-shadow: 0px 1px 0px rgba(255,255,255,0.4);
+}
+.error a:hover,
+.info a:hover,
+.success a:hover,
+.attention a:hover{
+    color: #004c66;
+    text-decoration: underline;
+}
 
 /* CUSTOM RESPONSIVE MEDIAQUERIES */
 
@@ -560,6 +626,23 @@ input:-webkit-autofill:active {
 
     .logincardheight{
         height: 190px !important;
+    }
+
+    .mobile-mask{
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%);
+        -moz-clip-path: polygon(0 0, 100% 0, 100% 100%);
+        -ms-clip-path: polygon(0 0, 100% 0, 100% 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 100%);
+    }
+
+    .FFonly{
+        display: none;
+    }
+
+    @-moz-document url-prefix() {
+        .FFonly{
+            display: inline-block;
+        }
     }
 
 }
